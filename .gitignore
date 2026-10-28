@@ -16,14 +16,17 @@ __pycache__/
 *.lib
 
 # Cython generated C/C++ files
-cython_wrapper/tsp_wrapper.cpp
-cython_wrapper/tsp_wrapper.h
+*/cython_wrapper/*.cpp
+*/cython_wrapper/*.h
 
 # C/C++ Build output
 build/
 dist/
 *.egg-info/
 .eggs/
+*/build/
+*/dist/
+*/*.egg-info/
 
 # IDE and Environment
 .vscode/
@@ -33,3 +36,4 @@ venv/
 ENV/
 env/
 .pytest_cache/
+*/.pytest_cache/
