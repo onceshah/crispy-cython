@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions and compiled binaries
+*.so
+*.pyd
+*.dll
+*.dylib
+*.exe
+*.o
+*.obj
+*.def
+*.exp
+*.lib
+
+# Cython generated C/C++ files
+cython_wrapper/tsp_wrapper.cpp
+cython_wrapper/tsp_wrapper.h
+
+# C/C++ Build output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE and Environment
+.vscode/
+.idea/
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
