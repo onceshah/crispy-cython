@@ -1,0 +1,7 @@
+include cpp/*.h
+include cpp/*.cpp
+include cython_wrapper/*.pyx
+include cython_wrapper/*.pxd
+include cython_wrapper/*.cpp
+include README.md
+include pyproject.toml
