@@ -1,4 +1,4 @@
-# crispy-cython ⚡
+# crispy-cython
 
 [![PyPI version](https://img.shields.io/pypi/v/tsp-fast-solver.svg?color=blue)](https://pypi.org/project/tsp-fast-solver/)
 [![PyPI Downloads](https://img.shields.io/pypi/dm/tsp-fast-solver.svg)](https://pypi.org/project/tsp-fast-solver/)
@@ -40,7 +40,7 @@ N = 11           | 3,628,800                | 1.61 s        | 14.3 ms       | ~1
 
 ---
 
-## 🔬 Why is C++ with Cython 112× Faster?
+## Why is C++ with Cython 112× Faster?
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -67,7 +67,7 @@ N = 11           | 3,628,800                | 1.61 s        | 14.3 ms       | ~1
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
 ### 1. Installation via PyPI
 You can install and use the compiled TSP solver directly from PyPI without configuring C++ compilers:
@@ -98,7 +98,7 @@ print(f"Optimal TSP Tour Cost (Cython): {cy_cost}")  # Output: 80
 
 ---
 
-## 🧩 Algorithm Walkthrough
+## Algorithm Walkthrough
 
 ### Pure Python Reference (`tsp/python_solver/tsp_pure.py`)
 Fixes City 0 as origin and generates $(N-1)!$ permutations of remaining cities using `itertools.permutations`:
@@ -183,7 +183,7 @@ def tsp_cython(object distance_matrix):
 
 ---
 
-## ⚖️ Engineering Guidelines: When to Use Cython
+## Engineering Guidelines: When to Use Cython
 
 | Scenario | Recommend Cython? | Rationale |
 |---|:---:|---|
@@ -196,7 +196,7 @@ def tsp_cython(object distance_matrix):
 
 ---
 
-## 📂 Repository Layout
+## Repository Layout
 
 ```
 crispy-cython/
@@ -230,7 +230,7 @@ crispy-cython/
 
 ---
 
-## 🛠️ Developer Guide (Running Locally)
+## Developer Guide (Running Locally)
 
 ### Run Benchmark
 ```bash
@@ -257,7 +257,7 @@ python generate_chart.py
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 - [x] Traveling Salesperson Problem (Pure Python vs C++ Cython)
 - [x] Standalone static Windows `.pyd` compilation (`-static`)
 - [x] PyPI release (`tsp-fast-solver`)
