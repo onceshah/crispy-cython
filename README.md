@@ -21,9 +21,9 @@ Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-sourc
 ### 1. Project Introduction
 In modern navigation systems, ride-hailing networks, and freight dispatch platforms, pathfinding engines must resolve complex graph routing queries in sub-millisecond latencies across hundreds of thousands of vertices. While Python offers rapid development, rich visualization tools, and clean syntax, its interpreted runtime introduces heavy overhead: dynamic typing checks, heap pointer indirection, and Python virtual machine (VM) bytecode execution loops.
 
-This project implements an ultra-optimized hybrid routing system where performance-critical graph traversal routines are implemented in compiled **native C++ (C++17)**, bridged directly into Python using **Cython**, and visualized through an interactive **liquid glassmorphic web dashboard**:
+This project implements an ultra-optimized hybrid routing system where performance-critical graph traversal routines are implemented in compiled **native C++ (C++17)**, bridged directly into Python using **Cython**, and visualized through an interactive **web dashboard**:
 - **Computational Speedup**: Delivers **up to 31x acceleration** over pure Python across dense matrices and real-world topological networks.
-- **Real-World Corridor**: Models the 19.5 km transit corridor connecting **UPES Bidholi Campus -> Indian Oil Petrol Pump (Pondha) -> Manduwala -> Premnagar -> Clock Tower (Ghanta Ghar)**, with extensions across Himalayan mountain corridors including **Mussoorie**, **Kempty Falls**, and **Dhanaulti**.
+- **Real-World Corridor**: Models the entire transit corridor connecting **Starting location -> Stop Points ->End Destination**
 - **Multi-Stop Route Permutation Solver**: Automatically computes the mathematically optimal visitation sequence across multiple requested waypoints in minimal total travel distance and driving time.
 - **Industry-Standard JSON Contract**: Decouples the compiled numerical solver from consumer interfaces through a structured data payload (`route_path.json`).
 
