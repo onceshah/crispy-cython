@@ -80,7 +80,7 @@ This project implements an ultra-optimized hybrid routing system where performan
 
 #### Frontend Screenshots
 
-##### Route Selection Dialog (Centered Liquid Glass Selector)
+##### Route Selection Dialog
 The user selects a Start Point, Destination, and multiple intermediate stops (e.g., Mussoorie Mall Road, Kempty Falls, Jharipani Waterfall, Clock Tower). The planner floats centrally above the map:
 
 ![Frontend Route Planner](assets/frontend_route_planner.jpg)
