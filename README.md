@@ -1,6 +1,7 @@
 # crispy-cython
 
-[![PyPI version](https://img.shields.io/pypi/v/tsp-fast-solver.svg)](https://pypi.org/project/tsp-fast-solver/)
+[![PyPI version](https://img.shields.io/pypi/v/crispy-cython.svg)](https://pypi.org/project/crispy-cython/)
+[![PyPI - TSP Fast Solver](https://img.shields.io/badge/pypi-tsp--fast--solver-blue.svg)](https://pypi.org/project/tsp-fast-solver/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![C++17](https://img.shields.io/badge/C++-17-00599C.svg?logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)
