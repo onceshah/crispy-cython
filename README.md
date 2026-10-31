@@ -95,12 +95,6 @@ Once the route is solved, the central route planner slides down and hides, provi
 
 ![Frontend Route Overview](assets/frontend_route_overview.jpg)
 
-#### Liquid Glassmorphism & UI Features
-- **Frosted Glass Styling**: Uses `backdrop-filter: blur(24px) saturate(190%)` and subtle translucent borders for visual depth against dynamic map tiles.
-- **Quicksand Typography**: Rendered exclusively in clean Google Quicksand typography with zero emojis.
-- **Animated Central Position**: The "Select Route" modal is centered directly above the bottom dashboard. Once a route is calculated, a smooth CSS `transform: translateY(30px)` transition hides the selector to reveal the full map. It can be toggled back at any time via the "Edit Route" button.
-- **Interactive Draggable Pins**: Start Point (Green Pin A), Destination (Blue Pin B), and intermediate waypoints (Amber numbered markers 1, 2, 3, 4) can be dragged anywhere on the map with live road snapping and zero snap-back.
-- **Bottom Metrics Dashboard**: Persistent glass card displaying Distance (`130 km`), Duration (`~179 min`), Stop count (`4 stops`), and action buttons (`EDIT ROUTE`, `Export JSON`, `Directions`, `Raw JSON`).
 
 ---
 
