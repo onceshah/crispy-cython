@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "cython>=3.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crispy-cython"
+version = "0.1.0"
+authors = [{ name = "Vansh Shah", email = "vanshshah904@gmail.com" }]
+description = "High-performance graph algorithms (Dijkstra, TSP) combining compiled C++ with Cython"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["cython", "graph", "dijkstra", "tsp", "shortest-path", "c++", "optimization", "routing"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: C++",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+Homepage = "https://github.com/onceshah/crispy-cython"
+Repository = "https://github.com/onceshah/crispy-cython"
+Issues = "https://github.com/onceshah/crispy-cython/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crispy_cython", "crispy_cython.*"]
+exclude = ["crispy_cython.*.cpp*"]

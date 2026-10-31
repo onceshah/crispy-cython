@@ -23,6 +23,8 @@ __pycache__/
 # Cython generated C/C++ files
 */cython_wrapper/*.cpp
 */cython_wrapper/*.h
+crispy_cython/*/*_wrapper.cpp
+crispy_cython/*/*_wrapper.h
 
 # C/C++ Build output
 build/
