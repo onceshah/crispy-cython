@@ -14,7 +14,7 @@ Features two production-grade modules:
 
 ---
 
-## Cython C++ Dijkstra Implementation
+## Module 1) Cython C++ Dijkstra Implementation
 
 Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-source shortest paths and reconstructs optimal routes on dense matrix graphs and real-world metropolitan networks.
 
