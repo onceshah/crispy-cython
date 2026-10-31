@@ -9,7 +9,7 @@ An ultra-optimized brute-force solver for the **Traveling Salesperson Problem (T
 
 ---
 
-## 📌 The Challenge
+## The Challenge
 
 Graphs are fundamental data structures used to model transportation networks, routing topologies, and relational systems. The **Traveling Salesperson Problem (TSP)** is an NP-Hard problem:
 > *Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?*
@@ -26,7 +26,7 @@ A brute-force search quickly overwhelms dynamic interpreted languages like Pytho
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 The codebase cleanly decouples native C++ algorithms, Cython interfacing definitions, pure Python baseline implementations, and packaging configuration:
 
@@ -56,7 +56,7 @@ Graph/
 
 ---
 
-## ⚡ Algorithm Implementations
+## Algorithm Implementations
 
 ### 1. Pure Python Solver (`tsp_python`)
 - Location: `python_solver/tsp_pure.py`
@@ -74,17 +74,19 @@ Graph/
 
 ---
 
-## 📊 Benchmark Results
+## Benchmark Results
+
+![TSP Benchmark Comparison](tsp_benchmark_comparison.png)
 
 Benchmarked on **Python 3.13.7 (64-bit)** with random symmetric distance matrices (edge weights $10 \le w \le 100$):
 
 | Graph Size ($N$) | Routes $(N-1)!$ | Expected Python Time | Expected Cython Time | Recorded Python Time | Recorded Cython Time | Speedup Factor |
 |:----------------:|:---------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------:|
-| **$N = 8$**      | 5,040           | $< 0.1\,\text{s}$    | Instant              | **$0.0016\,\text{s}$**| **$0.02\,\text{ms}$** | **$73.0\times$** |
-| **$N = 10$**     | 362,880         | $\sim 1 - 2\,\text{s}$| $< 0.05\,\text{s}$   | **$0.1429\,\text{s}$**| **$1.36\,\text{ms}$** | **$105.1\times$** |
-| **$N = 11$**     | 3,628,800       | $\sim 15 - 30\,\text{s}$| $\sim 0.5\,\text{s}$| **$1.5891\,\text{s}$**| **$14.20\,\text{ms}$**| **$111.9\times$** |
+| **$N = 8$**      | 5,040           | $< 0.1\,\text{s}$    | Instant              | **$2.1\,\text{ms}$** | **$0.033\,\text{ms}$**| **$\sim 66\times$** |
+| **$N = 10$**     | 362,880         | $\sim 1 - 2\,\text{s}$| $< 0.05\,\text{s}$   | **$149\,\text{ms}$** | **$1.42\,\text{ms}$** | **$\sim 105\times$** |
+| **$N = 11$**     | 3,628,800       | $\sim 15 - 30\,\text{s}$| $\sim 0.5\,\text{s}$| **$1.63\,\text{s}$** | **$14.3\,\text{ms}$** | **$\sim 114\times$** |
 
-> **Key Takeaway**: At $N = 11$, Cython + C++ delivers a **$111.9\times$ speedup**, reducing computational runtime from seconds down to 14 milliseconds.
+> **Key Takeaway**: At $N = 11$, Cython + C++ delivers a **$\sim 114\times$ speedup**, reducing computational runtime from 1.63 seconds down to 14.3 milliseconds.
 
 ### Why is C++ with Cython so much faster?
 1. **Zero Interpreter Overhead**: Python's iteration loops involve dynamic dispatch, reference counting, and bytecode instruction decoding on every step. C++ executes compiled machine code.
@@ -94,7 +96,7 @@ Benchmarked on **Python 3.13.7 (64-bit)** with random symmetric distance matrice
 
 ---
 
-## 🚀 Quickstart & Usage
+## Quickstart & Usage
 
 ### 1. Build In-Place Locally
 ```bash
@@ -133,7 +135,7 @@ print(f"Optimal TSP Cost (Cython): {min_cost_cy}")  # Output: 80
 
 ---
 
-## 📦 Packaging and PyPI Distribution
+## Packaging and PyPI Distribution
 
 ### 1. Building Source Distribution (sdist)
 As specified in PEP 517 / PEP 621, build the source distribution using `build`:
@@ -170,5 +172,5 @@ python -c "import tsp_fast_solver; print('Success!')"
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the MIT License.

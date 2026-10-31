@@ -7,7 +7,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Project Overview & Objectives](#1-project-overview--objectives)
 2. [The Problem: Traveling Salesperson Problem (TSP)](#2-the-problem-traveling-salesperson-problem-tsp)
 3. [Algorithm & Code Walkthrough](#3-algorithm--code-walkthrough)

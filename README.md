@@ -77,9 +77,9 @@ Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ c
 
 | Graph Size ($N$) | Routes $(N-1)!$ | Pure Python | C++ (Cython) | Speedup |
 | :---: | :---: | :---: | :---: | :---: |
-| $N = 8$ | 5,040 | 1.65 ms | 0.021 ms | **~79x** |
-| $N = 10$ | 362,880 | 145.2 ms | 1.39 ms | **~104x** |
-| $N = 11$ | 3,628,800 | 1.61 s | 14.3 ms | **~112x** |
+| $N = 8$ | 5,040 | 2.1 ms | 0.033 ms | **~66x** |
+| $N = 10$ | 362,880 | 149 ms | 1.42 ms | **~105x** |
+| $N = 11$ | 3,628,800 | 1.63 s | 14.3 ms | **~114x** |
 
 **Hardware & Methodology:**
 - **CPU**: 13th Gen Intel Core i7-13700HX (16 cores, 24 threads)
