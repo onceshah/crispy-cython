@@ -3,20 +3,77 @@
 [![PyPI version](https://img.shields.io/pypi/v/tsp-fast-solver.svg)](https://pypi.org/project/tsp-fast-solver/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![C++17](https://img.shields.io/badge/C++-17-00599C.svg?logo=c%2B%2B)](https://en.cppreference.com/w/cpp/17)
+[![Cython](https://img.shields.io/badge/Cython-3.0+-gold.svg)](https://cython.org/)
 
-A collection of graph and mathematical algorithms comparing pure Python implementations against native C/C++ accelerated using Cython.
+A collection of high-performance graph algorithms comparing **Pure Python** against **Native C/C++** accelerated using **Cython**.
 
-Currently features an exact brute-force solver for the **Traveling Salesperson Problem (TSP)** published on PyPI as [`tsp-fast-solver`](https://pypi.org/project/tsp-fast-solver/).
+Features two production-grade modules:
+1. **DoonRoute (Dijkstra Shortest Path Engine)**: Fast matrix and path reconstruction engine featuring a **real-world Dehradun road routing engine** from **UPES Bidholi to Clock Tower (Ghanta Ghar)** with multi-stop optimization, live OpenStreetMap road snapping, liquid glassmorphism, and empirical multi-machine hardware benchmarks.
+2. **Traveling Salesperson Problem (TSP)**: Exact factorial brute-force solver published on PyPI as [`tsp-fast-solver`](https://pypi.org/project/tsp-fast-solver/).
 
 ---
 
-## Benchmark: Pure Python vs C++ (Cython)
+## 🚀 Module 1: DoonRoute · Cython C++ Dijkstra Engine
 
-Here is a performance comparison for the Traveling Salesperson Problem across different graph sizes:
+Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-source shortest paths and reconstructs optimal routes on dense matrix graphs and real-world metropolitan networks.
+
+### 📊 Cross-Machine Benchmark Evaluation (3 Laptops, 3 Runs Each)
+
+![Dijkstra Multi-Machine Benchmark](assets/dijkstra_benchmark_3machines.jpg)
+
+#### Hardware Comparison & Speedup Table
+
+| Graph / Benchmark Tier | Matrix Size ($V^2$) | Intel Core i5-1135G7 (7.7 GB RAM) | Intel Core i5-12500H (15.6 GB RAM) | Intel Core i7-13700HX (15.7 GB RAM) |
+| :--- | :---: | :---: | :---: | :---: |
+| **Dehradun Map ($V=41$)** | 1,681 cells | **$10\times$ faster** | **$9\times$ faster** | **$14\times$ faster** |
+| **Dehradun Road (60 edges)** | 60 edges | **$31\times$ faster** | **$29\times$ faster** | **$28\times$ faster** |
+| **Synthetic $V = 200$** | 40,000 cells | **$14\times$ faster** | **$15\times$ faster** | **$17\times$ faster** |
+| **Synthetic $V = 500$** | 250,000 cells | **$11\times$ faster** | **$14\times$ faster** | **$15\times$ faster** |
+| **Synthetic $V = 1000$** | 1,000,000 cells | **$12\times$ faster** | **$15\times$ faster** | **$16\times$ faster** |
+| **Synthetic $V = 1500$** | 2,250,000 cells | $192\,\text{ms} \to 14.9\,\text{ms}$ (**$13\times$**) | $176\,\text{ms} \to 11.1\,\text{ms}$ (**$16\times$**) | $125\,\text{ms} \to 7.5\,\text{ms}$ (**$17\times$**) |
+
+#### Terminal Benchmark Runs
+
+##### Machine 1: Intel Core i7-13700HX (Vansh Shah)
+| Run 1 | Run 2 | Run 3 |
+| :---: | :---: | :---: |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="280" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="280" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="280" /> |
+
+##### Machine 2: Intel Core i5-1135G7 (Ambrish)
+| Run 1 | Runs 2 & 3 |
+| :---: | :---: |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="420" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%202%20AND%203.jpeg" width="420" /> |
+
+##### Machine 3: Intel Core i5-12500H (Lux)
+| Multi-Run Terminal Output |
+| :---: |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="550" /> |
+
+### 🗺️ Real-World Dehradun Routing Engine
+- **Origin**: UPES Bidholi Campus (`30.41589° N, 77.96644° E`)
+- **Destination**: Clock Tower (Ghanta Ghar), Dehradun (`30.32443° N, 78.04184° E`)
+- **Multi-Stop Permutation Solver**: Optimizes intermediate stops (e.g. Indian Oil Petrol Pump, Manduwala Friend's House, The Village Restaurant).
+- **Curved GPS Road Geometry**: Snaps lines directly to real OpenStreetMap road curves using live OSRM rather than straight euclidean lines.
+- **Interactive Liquid Glass UI**: Translucent glassmorphism with Google Quicksand typography, draggable pins, centered slide-down planner panel, and JSON export.
+
+```bash
+# Run web application
+python dijkstra_c_vs_python/app.py
+
+# Run Streamlit interface
+streamlit run dijkstra_c_vs_python/streamlit_app.py
+```
+
+---
+
+## 🚀 Module 2: Traveling Salesperson Problem (TSP)
+
+Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ closed tours.
 
 ![TSP Benchmark Comparison](tsp_benchmark_comparison.png)
 
-### Results
+### Performance Benchmark (Pure Python vs C++ Cython)
 
 | Graph Size ($N$) | Routes $(N-1)!$ | Pure Python | C++ (Cython) | Speedup |
 |:---:|:---:|:---:|:---:|:---:|
@@ -30,175 +87,99 @@ Here is a performance comparison for the Traveling Salesperson Problem across di
 - **OS**: Windows 11 (64-bit)
 - **Python**: 3.13.7
 - **Compiler**: Clang / LLVM-MinGW (`-O3 -std=c++17 -static`)
-- **Timing**: `timeit.default_timer()` averaging 10 runs for $N=8, 10$ and 3–5 runs for $N=11$.
+- **Timing**: `timeit.default_timer()` monotonic QPC hardware clock.
 
 ---
 
-## Why is C++ so much faster here?
+## ⚡ Why is C++ with Cython So Much Faster?
 
-1. **Memory layout**: C++ stores the distance matrix in a single contiguous 1D array (`dist_matrix[i * n + j]`), which easily fits into CPU L1/L2 cache. Python lists store pointers to heap-allocated integer objects, causing frequent cache misses.
-2. **Zero heap allocation**: The C++ solver uses `std::next_permutation` to mutate city order in-place inside registers and stack memory. Python's `itertools.permutations` creates millions of temporary tuple objects.
-3. **No interpreter overhead**: Python must decode bytecode instructions, check types dynamically, and increment reference counts on every single loop iteration. C++ runs straight machine instructions.
-
----
-
-## Quickstart
-
-### Install from PyPI
-
-```bash
-pip install tsp-fast-solver
-```
-
-### Example Usage
-
-```python
-from tsp_fast_solver import tsp_python, tsp_cython
-
-# 4-city distance matrix
-matrix = [
-    [0, 10, 15, 20],
-    [10, 0, 35, 25],
-    [15, 35, 0, 30],
-    [20, 25, 30, 0]
-]
-
-print("Python result:", tsp_python(matrix))  # 80
-print("Cython result:", tsp_cython(matrix))  # 80
-```
+1. **Memory Layout & Cache Locality**: C++ stores graph matrices and distance tables in contiguous 1D memory buffers (`graph[u * V + v]`). These buffers fit directly into CPU L1/L2 caches, eliminating cache misses. In contrast, Python nested lists contain heap-allocated pointer arrays pointing to boxed integer objects scattered across memory.
+2. **Zero Heap Allocation in Inner Loops**: C++ performs in-place array scans with raw pointers (`const int* row = &graph[u * V]`). Python creates temporary iterator and tuple objects that trigger garbage collection overhead.
+3. **No Interpreter Overhead**: Python decodes bytecode, checks dynamic types, and increments/decrements reference counts on every cycle. Compiled C++ executes pure machine assembly.
 
 ---
 
-## How It Works
-
-### 1. Python Baseline (`tsp/python_solver/tsp_pure.py`)
-Fixes city `0` as the origin and permutes the remaining cities using `itertools.permutations`:
-
-```python
-import itertools, math
-
-def tsp_python(dist_matrix):
-    n = len(dist_matrix)
-    if n <= 1: return 0
-    if n == 2: return dist_matrix[0][1] + dist_matrix[1][0]
-
-    min_cost = math.inf
-    for perm in itertools.permutations(range(1, n)):
-        cost = dist_matrix[0][perm[0]]
-        for i in range(len(perm) - 1):
-            cost += dist_matrix[perm[i]][perm[i + 1]]
-        cost += dist_matrix[perm[-1]][0]
-        if cost < min_cost:
-            min_cost = cost
-    return min_cost
-```
-
-### 2. C++ Implementation (`tsp/cpp/tsp.cpp`)
-Uses `std::iota` to fill an array with `1` to `n-1`, then loops with `std::next_permutation`:
-
-```cpp
-#include "tsp.h"
-#include <vector>
-#include <algorithm>
-#include <climits>
-#include <numeric>
-
-int solve_tsp(const std::vector<int>& dist_matrix, int n) {
-    if (n <= 1) return 0;
-    if (n == 2) return dist_matrix[0 * n + 1] + dist_matrix[1 * n + 0];
-
-    std::vector<int> cities(n - 1);
-    std::iota(cities.begin(), cities.end(), 1);
-
-    int min_cost = INT_MAX;
-    do {
-        int cost = dist_matrix[0 * n + cities[0]];
-        for (int i = 0; i < n - 2; ++i) {
-            cost += dist_matrix[cities[i] * n + cities[i + 1]];
-        }
-        cost += dist_matrix[cities[n - 2] * n + 0];
-        if (cost < min_cost) min_cost = cost;
-    } while (std::next_permutation(cities.begin(), cities.end()));
-
-    return min_cost;
-}
-```
-
-### 3. Cython Bridge (`tsp/cython_wrapper/tsp_wrapper.pyx`)
-Flattens the Python list-of-lists into a C++ `std::vector<int>` and calls the compiled solver:
-
-```cython
-from libcpp.vector cimport vector
-from tsp_wrapper cimport solve_tsp
-
-def tsp_cython(object distance_matrix):
-    cdef int n = len(distance_matrix)
-    if n <= 1: return 0
-
-    cdef vector[int] vec
-    vec.reserve(n * n)
-
-    cdef int i, j
-    for i in range(n):
-        row = distance_matrix[i]
-        for j in range(n):
-            vec.push_back(<int>row[j])
-
-    return solve_tsp(vec, n)
-```
-
----
-
-## When to use Cython (and when not to)
-
-- **Use Cython for**: CPU-bound loops, graph problems, matrix operations, and numerical tasks where Python's dynamic overhead is the main bottleneck.
-- **Don't use Cython for**: I/O-bound tasks (network requests, database calls, file reading) where the CPU is mostly waiting, or simple scripts where Python is already fast enough.
-
----
-
-## Repository Structure
+## 📁 Repository Structure
 
 ```
-crispy-cython/
-├── tsp/
-│   ├── cpp/                  # tsp.h & tsp.cpp
-│   ├── cython_wrapper/       # tsp_wrapper.pxd & tsp_wrapper.pyx
-│   ├── python_solver/        # tsp_pure.py
-│   ├── tsp_fast_solver/      # PyPI package source
-│   ├── tests/                # pytest test suite
-│   ├── benchmark.py          # Benchmark runner
-│   ├── setup.py              # Build script (-O3 -static)
-│   └── pyproject.toml        # Package metadata
-├── dijkstra_c_vs_python/     # Dijkstra comparison (C vs Python)
-├── tsp_benchmark_comparison.png
+Cython/
+├── dijkstra_c_vs_python/               # Module 1: Dijkstra Shortest Path Solver
+│   ├── cpp/
+│   │   ├── dijkstra.h                  # C++ solver header
+│   │   └── dijkstra.cpp                # C++ implementation with path tracking
+│   ├── cython_wrapper/
+│   │   ├── dijkstra_wrapper.pxd        # Cython declarations
+│   │   └── dijkstra_wrapper.pyx        # Cython wrapper
+│   ├── python_solver/
+│   │   └── dijkstra_pure.py            # Pure Python baseline
+│   ├── dijkstra_fast_solver/           # Packaged module
+│   ├── dehradun_map/
+│   │   ├── dehradun_graph.py           # Real Dehradun road network graph
+│   │   └── generate_map.py             # Generates interactive Leaflet HTML map
+│   ├── tests/
+│   │   └── test_dijkstra.py            # Pytest test suite
+│   ├── benchmark.py                    # Dijkstra benchmark script
+│   ├── generate_chart.py               # Visual comparison chart generator
+│   ├── setup.py                        # Setuptools build script
+│   └── pyproject.toml                  # PEP 517 configuration
+├── tsp/                                # Module 2: Traveling Salesperson Problem Solver
+│   ├── cpp/
+│   ├── cython_wrapper/
+│   ├── python_solver/
+│   ├── tsp_fast_solver/
+│   ├── tests/
+│   ├── benchmark.py
+│   ├── setup.py
+│   └── pyproject.toml
+├── dehradun_shortest_path.html         # Interactive map (view in browser)
+├── dijkstra_benchmark_comparison.png   # Dijkstra performance infographic
+├── tsp_benchmark_comparison.png        # TSP performance infographic
 ├── LICENSE
 └── README.md
 ```
 
 ---
 
-## Running Locally
+## 🛠️ Quick Commands
 
-### Benchmark
+### 1. Build and Run Dijkstra Solvers
 ```bash
-cd tsp
-python benchmark.py
-```
+cd dijkstra_c_vs_python
 
-### Tests
-```bash
-cd tsp
-python -m pytest tests/
-```
-
-### Build Cython Extension
-```bash
-cd tsp
+# Build C++ Cython extension in-place
 python setup.py build_ext --inplace
+
+# Run the comprehensive benchmark
+python benchmark.py
+
+# Generate the interactive Dehradun map
+python dehradun_map/generate_map.py
+
+# Run unit tests
+python -m pytest tests/test_dijkstra.py -v
+
+# Generate benchmark infographic chart
+python generate_chart.py
+
+# Package sdist for PyPI
+python -m build --sdist --no-isolation
+```
+
+### 2. Build and Run TSP Solvers
+```bash
+cd tsp
+
+# Build Cython extension
+python setup.py build_ext --inplace
+
+# Run benchmark
+python benchmark.py
+
+# Run unit tests
+python -m pytest tests/
 ```
 
 ---
 
-## License
-
+## 📜 License
 MIT License. See [LICENSE](LICENSE) for details.

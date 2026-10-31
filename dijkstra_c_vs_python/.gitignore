@@ -1,0 +1,23 @@
+# Compiled C/C++ binaries and Cython extensions
+*.pyd
+*.so
+*.dll
+*.exe
+*.o
+*.obj
+
+# Cython generated C++ files
+cython_wrapper/*.cpp
+cython_wrapper/*.c
+
+# Build and distribution directories
+build/
+dist/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.zip
+

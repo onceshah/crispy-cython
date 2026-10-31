@@ -1,0 +1,2515 @@
+{
+  "status": "success",
+  "solver_engine": "Cython C++ Dijkstra",
+  "graph_format": "Google Maps Road Graph (nodes: [[x, y]], edges: [{s, d, w, name}])",
+  "nodes": [
+    [
+      30.41589,
+      77.96644
+    ],
+    [
+      30.4105,
+      77.9682
+    ],
+    [
+      30.3981,
+      77.9735
+    ],
+    [
+      30.3855,
+      77.9782
+    ],
+    [
+      30.3752,
+      77.9554
+    ],
+    [
+      30.3681,
+      77.9652
+    ],
+    [
+      30.3548,
+      77.951
+    ],
+    [
+      30.3475,
+      77.9576
+    ],
+    [
+      30.3396,
+      77.9685
+    ],
+    [
+      30.3341,
+      77.9862
+    ],
+    [
+      30.3382,
+      78.0053
+    ],
+    [
+      30.3391,
+      78.0205
+    ],
+    [
+      30.3347,
+      78.0308
+    ],
+    [
+      30.3286,
+      78.0362
+    ],
+    [
+      30.3512,
+      78.0315
+    ],
+    [
+      30.3415,
+      78.0332
+    ],
+    [
+      30.2982,
+      78.0055
+    ],
+    [
+      30.2886,
+      78.0092
+    ],
+    [
+      30.3152,
+      78.0321
+    ],
+    [
+      30.3185,
+      78.0382
+    ],
+    [
+      30.32443,
+      78.04184
+    ],
+    [
+      30.3805,
+      77.974
+    ],
+    [
+      30.3685,
+      77.9658
+    ],
+    [
+      30.361,
+      77.9625
+    ],
+    [
+      30.3478,
+      77.9585
+    ],
+    [
+      30.3355,
+      78.0185
+    ],
+    [
+      30.337,
+      78.024
+    ],
+    [
+      30.1245,
+      78.1895
+    ],
+    [
+      30.1042,
+      78.2982
+    ],
+    [
+      29.9562,
+      78.1706
+    ],
+    [
+      29.8665,
+      77.8932
+    ],
+    [
+      29.4727,
+      77.7085
+    ],
+    [
+      28.9845,
+      77.7064
+    ],
+    [
+      28.6289,
+      77.2785
+    ],
+    [
+      29.2825,
+      77.732
+    ],
+    [
+      29.3512,
+      77.7198
+    ],
+    [
+      29.832,
+      77.854
+    ],
+    [
+      28.895,
+      77.682
+    ],
+    [
+      30.118,
+      78.309
+    ],
+    [
+      30.4598,
+      78.0644
+    ],
+    [
+      30.378,
+      78.075
+    ]
+  ],
+  "edges": [
+    {
+      "s": 0,
+      "d": 1,
+      "w": 800,
+      "name": "Bidholi Campus Road",
+      "coords": [
+        [
+          30.41589,
+          77.96644
+        ],
+        [
+          30.4148,
+          77.9666
+        ],
+        [
+          30.4136,
+          77.967
+        ],
+        [
+          30.4123,
+          77.9675
+        ],
+        [
+          30.4112,
+          77.9679
+        ],
+        [
+          30.4105,
+          77.9682
+        ]
+      ]
+    },
+    {
+      "s": 1,
+      "d": 2,
+      "w": 1600,
+      "name": "Bidholi-Kandoli Road",
+      "coords": [
+        [
+          30.4105,
+          77.9682
+        ],
+        [
+          30.4088,
+          77.9688
+        ],
+        [
+          30.4071,
+          77.9697
+        ],
+        [
+          30.4054,
+          77.9706
+        ],
+        [
+          30.4036,
+          77.9715
+        ],
+        [
+          30.4018,
+          77.9723
+        ],
+        [
+          30.4,
+          77.973
+        ],
+        [
+          30.3981,
+          77.9735
+        ]
+      ]
+    },
+    {
+      "s": 2,
+      "d": 3,
+      "w": 1800,
+      "name": "Kandoli-Pondha Road",
+      "coords": [
+        [
+          30.3981,
+          77.9735
+        ],
+        [
+          30.396,
+          77.9742
+        ],
+        [
+          30.3938,
+          77.975
+        ],
+        [
+          30.3915,
+          77.976
+        ],
+        [
+          30.3892,
+          77.9769
+        ],
+        [
+          30.3872,
+          77.9776
+        ],
+        [
+          30.3855,
+          77.9782
+        ]
+      ]
+    },
+    {
+      "s": 3,
+      "d": 5,
+      "w": 2300,
+      "name": "Pondha-Manduwala Link",
+      "coords": [
+        [
+          30.3855,
+          77.9782
+        ],
+        [
+          30.3826,
+          77.976
+        ],
+        [
+          30.3795,
+          77.9732
+        ],
+        [
+          30.3762,
+          77.9705
+        ],
+        [
+          30.373,
+          77.9682
+        ],
+        [
+          30.3702,
+          77.9665
+        ],
+        [
+          30.3681,
+          77.9652
+        ]
+      ]
+    },
+    {
+      "s": 5,
+      "d": 7,
+      "w": 2700,
+      "name": "Manduwala to Nanda Ki Chowki",
+      "coords": [
+        [
+          30.3681,
+          77.9652
+        ],
+        [
+          30.3646,
+          77.9637
+        ],
+        [
+          30.3612,
+          77.9624
+        ],
+        [
+          30.3578,
+          77.961
+        ],
+        [
+          30.3542,
+          77.9598
+        ],
+        [
+          30.3508,
+          77.9586
+        ],
+        [
+          30.3475,
+          77.9576
+        ]
+      ]
+    },
+    {
+      "s": 1,
+      "d": 4,
+      "w": 4200,
+      "name": "Dunga Access Road",
+      "coords": [
+        [
+          30.4105,
+          77.9682
+        ],
+        [
+          30.4042,
+          77.964
+        ],
+        [
+          30.396,
+          77.9602
+        ],
+        [
+          30.3872,
+          77.9572
+        ],
+        [
+          30.3798,
+          77.9558
+        ],
+        [
+          30.3752,
+          77.9554
+        ]
+      ]
+    },
+    {
+      "s": 4,
+      "d": 5,
+      "w": 1500,
+      "name": "Dunga-Manduwala Crossroad",
+      "coords": [
+        [
+          30.3752,
+          77.9554
+        ],
+        [
+          30.3728,
+          77.9588
+        ],
+        [
+          30.3702,
+          77.9622
+        ],
+        [
+          30.3681,
+          77.9652
+        ]
+      ]
+    },
+    {
+      "s": 4,
+      "d": 6,
+      "w": 2800,
+      "name": "Dunga-Dhoolkot Forest Stretch",
+      "coords": [
+        [
+          30.3752,
+          77.9554
+        ],
+        [
+          30.3692,
+          77.9536
+        ],
+        [
+          30.362,
+          77.952
+        ],
+        [
+          30.3548,
+          77.951
+        ]
+      ]
+    },
+    {
+      "s": 6,
+      "d": 7,
+      "w": 1600,
+      "name": "Dhoolkot to Nanda Ki Chowki",
+      "coords": [
+        [
+          30.3548,
+          77.951
+        ],
+        [
+          30.3522,
+          77.9532
+        ],
+        [
+          30.3496,
+          77.9556
+        ],
+        [
+          30.3475,
+          77.9576
+        ]
+      ]
+    },
+    {
+      "s": 7,
+      "d": 8,
+      "w": 1400,
+      "name": "Chakrata Road (NH-7) to Premnagar",
+      "coords": [
+        [
+          30.3475,
+          77.9576
+        ],
+        [
+          30.345,
+          77.961
+        ],
+        [
+          30.3428,
+          77.964
+        ],
+        [
+          30.341,
+          77.9666
+        ],
+        [
+          30.3396,
+          77.9685
+        ]
+      ]
+    },
+    {
+      "s": 8,
+      "d": 9,
+      "w": 2000,
+      "name": "Premnagar to IMA Gate",
+      "coords": [
+        [
+          30.3396,
+          77.9685
+        ],
+        [
+          30.338,
+          77.9734
+        ],
+        [
+          30.3365,
+          77.9782
+        ],
+        [
+          30.335,
+          77.9826
+        ],
+        [
+          30.3341,
+          77.9862
+        ]
+      ]
+    },
+    {
+      "s": 9,
+      "d": 10,
+      "w": 2100,
+      "name": "IMA to FRI Main Gate",
+      "coords": [
+        [
+          30.3341,
+          77.9862
+        ],
+        [
+          30.3351,
+          77.9918
+        ],
+        [
+          30.3362,
+          77.997
+        ],
+        [
+          30.3374,
+          78.0016
+        ],
+        [
+          30.3382,
+          78.0053
+        ]
+      ]
+    },
+    {
+      "s": 10,
+      "d": 11,
+      "w": 1600,
+      "name": "FRI to Ballupur Chowk",
+      "coords": [
+        [
+          30.3382,
+          78.0053
+        ],
+        [
+          30.3385,
+          78.0105
+        ],
+        [
+          30.3388,
+          78.0156
+        ],
+        [
+          30.3391,
+          78.0205
+        ]
+      ]
+    },
+    {
+      "s": 11,
+      "d": 12,
+      "w": 1200,
+      "name": "Ballupur to Kishan Nagar",
+      "coords": [
+        [
+          30.3391,
+          78.0205
+        ],
+        [
+          30.3376,
+          78.024
+        ],
+        [
+          30.3362,
+          78.0272
+        ],
+        [
+          30.3352,
+          78.0294
+        ],
+        [
+          30.3347,
+          78.0308
+        ]
+      ]
+    },
+    {
+      "s": 12,
+      "d": 13,
+      "w": 850,
+      "name": "Kishan Nagar to Bindal Bridge",
+      "coords": [
+        [
+          30.3347,
+          78.0308
+        ],
+        [
+          30.3325,
+          78.0328
+        ],
+        [
+          30.3304,
+          78.0346
+        ],
+        [
+          30.3286,
+          78.0362
+        ]
+      ]
+    },
+    {
+      "s": 13,
+      "d": 20,
+      "w": 750,
+      "name": "Bindal Bridge to Clock Tower",
+      "coords": [
+        [
+          30.3286,
+          78.0362
+        ],
+        [
+          30.327,
+          78.0382
+        ],
+        [
+          30.3255,
+          78.0402
+        ],
+        [
+          30.32443,
+          78.04184
+        ]
+      ]
+    },
+    {
+      "s": 3,
+      "d": 14,
+      "w": 6500,
+      "name": "Pondha-Birpur Cantt Pass",
+      "coords": [
+        [
+          30.3855,
+          77.9782
+        ],
+        [
+          30.3802,
+          77.9896
+        ],
+        [
+          30.374,
+          78.002
+        ],
+        [
+          30.3668,
+          78.0138
+        ],
+        [
+          30.3582,
+          78.0244
+        ],
+        [
+          30.3512,
+          78.0315
+        ]
+      ]
+    },
+    {
+      "s": 11,
+      "d": 14,
+      "w": 1900,
+      "name": "Ballupur to Garhi Cantt",
+      "coords": [
+        [
+          30.3391,
+          78.0205
+        ],
+        [
+          30.3432,
+          78.0244
+        ],
+        [
+          30.3475,
+          78.0282
+        ],
+        [
+          30.3512,
+          78.0315
+        ]
+      ]
+    },
+    {
+      "s": 14,
+      "d": 15,
+      "w": 1300,
+      "name": "Garhi Cantt to Kaulagarh",
+      "coords": [
+        [
+          30.3512,
+          78.0315
+        ],
+        [
+          30.3472,
+          78.0323
+        ],
+        [
+          30.3438,
+          78.0329
+        ],
+        [
+          30.3415,
+          78.0332
+        ]
+      ]
+    },
+    {
+      "s": 15,
+      "d": 12,
+      "w": 1100,
+      "name": "Kaulagarh to Kishan Nagar",
+      "coords": [
+        [
+          30.3415,
+          78.0332
+        ],
+        [
+          30.3382,
+          78.0324
+        ],
+        [
+          30.336,
+          78.0315
+        ],
+        [
+          30.3347,
+          78.0308
+        ]
+      ]
+    },
+    {
+      "s": 15,
+      "d": 20,
+      "w": 1800,
+      "name": "Kaulagarh to Clock Tower Direct Link",
+      "coords": [
+        [
+          30.3415,
+          78.0332
+        ],
+        [
+          30.3352,
+          78.0368
+        ],
+        [
+          30.3295,
+          78.0398
+        ],
+        [
+          30.32443,
+          78.04184
+        ]
+      ]
+    },
+    {
+      "s": 8,
+      "d": 16,
+      "w": 5800,
+      "name": "Premnagar to Majra (Shimla Bypass)",
+      "coords": [
+        [
+          30.3396,
+          77.9685
+        ],
+        [
+          30.3262,
+          77.9788
+        ],
+        [
+          30.3118,
+          77.9922
+        ],
+        [
+          30.2982,
+          78.0055
+        ]
+      ]
+    },
+    {
+      "s": 16,
+      "d": 17,
+      "w": 1200,
+      "name": "Majra to ISBT Dehradun",
+      "coords": [
+        [
+          30.2982,
+          78.0055
+        ],
+        [
+          30.293,
+          78.0076
+        ],
+        [
+          30.2886,
+          78.0092
+        ]
+      ]
+    },
+    {
+      "s": 17,
+      "d": 18,
+      "w": 3600,
+      "name": "ISBT to Saharanpur Chowk",
+      "coords": [
+        [
+          30.2886,
+          78.0092
+        ],
+        [
+          30.2972,
+          78.0178
+        ],
+        [
+          30.3062,
+          78.0255
+        ],
+        [
+          30.3152,
+          78.0321
+        ]
+      ]
+    },
+    {
+      "s": 18,
+      "d": 19,
+      "w": 800,
+      "name": "Saharanpur Chowk to Prince Chowk",
+      "coords": [
+        [
+          30.3152,
+          78.0321
+        ],
+        [
+          30.3168,
+          78.0354
+        ],
+        [
+          30.3185,
+          78.0382
+        ]
+      ]
+    },
+    {
+      "s": 19,
+      "d": 20,
+      "w": 900,
+      "name": "Prince Chowk to Clock Tower",
+      "coords": [
+        [
+          30.3185,
+          78.0382
+        ],
+        [
+          30.3214,
+          78.0402
+        ],
+        [
+          30.32443,
+          78.04184
+        ]
+      ]
+    },
+    {
+      "s": 18,
+      "d": 13,
+      "w": 1600,
+      "name": "Saharanpur Chowk to Bindal Bridge",
+      "coords": [
+        [
+          30.3152,
+          78.0321
+        ],
+        [
+          30.3216,
+          78.0344
+        ],
+        [
+          30.3286,
+          78.0362
+        ]
+      ]
+    },
+    {
+      "s": 12,
+      "d": 18,
+      "w": 2400,
+      "name": "Kishan Nagar to Saharanpur Chowk link",
+      "coords": [
+        [
+          30.3347,
+          78.0308
+        ],
+        [
+          30.3248,
+          78.0316
+        ],
+        [
+          30.3152,
+          78.0321
+        ]
+      ]
+    },
+    {
+      "s": 3,
+      "d": 21,
+      "w": 600,
+      "name": "Pondha Petrol Pump Approach",
+      "coords": [
+        [
+          30.3855,
+          77.9782
+        ],
+        [
+          30.3828,
+          77.9758
+        ],
+        [
+          30.3805,
+          77.974
+        ]
+      ]
+    },
+    {
+      "s": 21,
+      "d": 5,
+      "w": 1700,
+      "name": "Petrol Pump to Manduwala Link",
+      "coords": [
+        [
+          30.3805,
+          77.974
+        ],
+        [
+          30.3752,
+          77.97
+        ],
+        [
+          30.371,
+          77.967
+        ],
+        [
+          30.3681,
+          77.9652
+        ]
+      ]
+    },
+    {
+      "s": 5,
+      "d": 22,
+      "w": 200,
+      "name": "Manduwala Colony Lane",
+      "coords": [
+        [
+          30.3681,
+          77.9652
+        ],
+        [
+          30.3683,
+          77.9655
+        ],
+        [
+          30.3685,
+          77.9658
+        ]
+      ]
+    },
+    {
+      "s": 4,
+      "d": 22,
+      "w": 1400,
+      "name": "Dunga to Friend's Residence",
+      "coords": [
+        [
+          30.3752,
+          77.9554
+        ],
+        [
+          30.3715,
+          77.961
+        ],
+        [
+          30.3685,
+          77.9658
+        ]
+      ]
+    },
+    {
+      "s": 5,
+      "d": 23,
+      "w": 900,
+      "name": "Manduwala to Village Restaurant",
+      "coords": [
+        [
+          30.3681,
+          77.9652
+        ],
+        [
+          30.3642,
+          77.9636
+        ],
+        [
+          30.361,
+          77.9625
+        ]
+      ]
+    },
+    {
+      "s": 23,
+      "d": 7,
+      "w": 1800,
+      "name": "Village Restaurant to Nanda Ki Chowki",
+      "coords": [
+        [
+          30.361,
+          77.9625
+        ],
+        [
+          30.3562,
+          77.9606
+        ],
+        [
+          30.3515,
+          77.9589
+        ],
+        [
+          30.3475,
+          77.9576
+        ]
+      ]
+    },
+    {
+      "s": 7,
+      "d": 24,
+      "w": 150,
+      "name": "Nanda Ki Chowki HP Fuel Station",
+      "coords": [
+        [
+          30.3475,
+          77.9576
+        ],
+        [
+          30.3478,
+          77.9585
+        ]
+      ]
+    },
+    {
+      "s": 24,
+      "d": 8,
+      "w": 1250,
+      "name": "HP Pump to Premnagar Market",
+      "coords": [
+        [
+          30.3478,
+          77.9585
+        ],
+        [
+          30.3432,
+          77.9638
+        ],
+        [
+          30.3396,
+          77.9685
+        ]
+      ]
+    },
+    {
+      "s": 11,
+      "d": 25,
+      "w": 500,
+      "name": "Ballupur to Vasant Vihar Lane",
+      "coords": [
+        [
+          30.3391,
+          78.0205
+        ],
+        [
+          30.337,
+          78.0194
+        ],
+        [
+          30.3355,
+          78.0185
+        ]
+      ]
+    },
+    {
+      "s": 25,
+      "d": 12,
+      "w": 900,
+      "name": "Vasant Vihar to Kishan Nagar",
+      "coords": [
+        [
+          30.3355,
+          78.0185
+        ],
+        [
+          30.3349,
+          78.0248
+        ],
+        [
+          30.3347,
+          78.0308
+        ]
+      ]
+    },
+    {
+      "s": 11,
+      "d": 26,
+      "w": 400,
+      "name": "Ballupur to Restaurant Avenue",
+      "coords": [
+        [
+          30.3391,
+          78.0205
+        ],
+        [
+          30.3378,
+          78.0224
+        ],
+        [
+          30.337,
+          78.024
+        ]
+      ]
+    },
+    {
+      "s": 26,
+      "d": 12,
+      "w": 800,
+      "name": "Restaurant to Kishan Nagar Chowk",
+      "coords": [
+        [
+          30.337,
+          78.024
+        ],
+        [
+          30.3356,
+          78.0276
+        ],
+        [
+          30.3347,
+          78.0308
+        ]
+      ]
+    },
+    {
+      "s": 17,
+      "d": 27,
+      "w": 22000,
+      "name": "Dehradun ISBT to Nepali Farm (NH-7)",
+      "coords": [
+        [
+          30.2886,
+          78.0092
+        ],
+        [
+          30.245,
+          78.082
+        ],
+        [
+          30.185,
+          78.145
+        ],
+        [
+          30.1245,
+          78.1895
+        ]
+      ]
+    },
+    {
+      "s": 19,
+      "d": 27,
+      "w": 24000,
+      "name": "Prince Chowk to Nepali Farm via Rispana",
+      "coords": [
+        [
+          30.3185,
+          78.0382
+        ],
+        [
+          30.285,
+          78.065
+        ],
+        [
+          30.192,
+          78.14
+        ],
+        [
+          30.1245,
+          78.1895
+        ]
+      ]
+    },
+    {
+      "s": 27,
+      "d": 28,
+      "w": 16000,
+      "name": "Nepali Farm to Rishikesh (Triveni Ghat)",
+      "coords": [
+        [
+          30.1245,
+          78.1895
+        ],
+        [
+          30.118,
+          78.245
+        ],
+        [
+          30.1042,
+          78.2982
+        ]
+      ]
+    },
+    {
+      "s": 27,
+      "d": 29,
+      "w": 24000,
+      "name": "Nepali Farm to Haridwar (Har Ki Pauri)",
+      "coords": [
+        [
+          30.1245,
+          78.1895
+        ],
+        [
+          30.065,
+          78.178
+        ],
+        [
+          30.005,
+          78.172
+        ],
+        [
+          29.9562,
+          78.1706
+        ]
+      ]
+    },
+    {
+      "s": 28,
+      "d": 29,
+      "w": 21000,
+      "name": "Rishikesh to Haridwar (Chilla Ganga Corridor)",
+      "coords": [
+        [
+          30.1042,
+          78.2982
+        ],
+        [
+          30.052,
+          78.225
+        ],
+        [
+          29.985,
+          78.182
+        ],
+        [
+          29.9562,
+          78.1706
+        ]
+      ]
+    },
+    {
+      "s": 28,
+      "d": 38,
+      "w": 1200,
+      "name": "Triveni Ghat to Chotiwala Ganga Restaurant",
+      "coords": [
+        [
+          30.1042,
+          78.2982
+        ],
+        [
+          30.112,
+          78.304
+        ],
+        [
+          30.118,
+          78.309
+        ]
+      ]
+    },
+    {
+      "s": 29,
+      "d": 30,
+      "w": 32000,
+      "name": "Haridwar to Roorkee (NH-334)",
+      "coords": [
+        [
+          29.9562,
+          78.1706
+        ],
+        [
+          29.912,
+          78.055
+        ],
+        [
+          29.885,
+          77.965
+        ],
+        [
+          29.8665,
+          77.8932
+        ]
+      ]
+    },
+    {
+      "s": 30,
+      "d": 36,
+      "w": 3500,
+      "name": "Roorkee to Indian Oil Swagat Highway Plaza",
+      "coords": [
+        [
+          29.8665,
+          77.8932
+        ],
+        [
+          29.845,
+          77.872
+        ],
+        [
+          29.832,
+          77.854
+        ]
+      ]
+    },
+    {
+      "s": 36,
+      "d": 31,
+      "w": 41500,
+      "name": "Swagat Plaza to Muzaffarnagar (NH-334)",
+      "coords": [
+        [
+          29.832,
+          77.854
+        ],
+        [
+          29.685,
+          77.785
+        ],
+        [
+          29.562,
+          77.735
+        ],
+        [
+          29.4727,
+          77.7085
+        ]
+      ]
+    },
+    {
+      "s": 30,
+      "d": 31,
+      "w": 45000,
+      "name": "Roorkee to Muzaffarnagar Direct",
+      "coords": [
+        [
+          29.8665,
+          77.8932
+        ],
+        [
+          29.72,
+          77.795
+        ],
+        [
+          29.58,
+          77.74
+        ],
+        [
+          29.4727,
+          77.7085
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "d": 35,
+      "w": 14000,
+      "name": "Muzaffarnagar to Namaste Midway Food Plaza",
+      "coords": [
+        [
+          29.4727,
+          77.7085
+        ],
+        [
+          29.412,
+          77.714
+        ],
+        [
+          29.3512,
+          77.7198
+        ]
+      ]
+    },
+    {
+      "s": 35,
+      "d": 34,
+      "w": 12000,
+      "name": "Namaste Midway to Cheetal Grand Resort (Khatauli)",
+      "coords": [
+        [
+          29.3512,
+          77.7198
+        ],
+        [
+          29.315,
+          77.726
+        ],
+        [
+          29.2825,
+          77.732
+        ]
+      ]
+    },
+    {
+      "s": 34,
+      "d": 32,
+      "w": 32000,
+      "name": "Cheetal Grand to Meerut Bypass Interchange",
+      "coords": [
+        [
+          29.2825,
+          77.732
+        ],
+        [
+          29.155,
+          77.722
+        ],
+        [
+          29.045,
+          77.712
+        ],
+        [
+          28.9845,
+          77.7064
+        ]
+      ]
+    },
+    {
+      "s": 31,
+      "d": 32,
+      "w": 58000,
+      "name": "Muzaffarnagar to Meerut Bypass Direct",
+      "coords": [
+        [
+          29.4727,
+          77.7085
+        ],
+        [
+          29.32,
+          77.724
+        ],
+        [
+          29.12,
+          77.718
+        ],
+        [
+          28.9845,
+          77.7064
+        ]
+      ]
+    },
+    {
+      "s": 32,
+      "d": 37,
+      "w": 12000,
+      "name": "Meerut to HP Auto Care Oasis Mega Plaza",
+      "coords": [
+        [
+          28.9845,
+          77.7064
+        ],
+        [
+          28.938,
+          77.694
+        ],
+        [
+          28.895,
+          77.682
+        ]
+      ]
+    },
+    {
+      "s": 37,
+      "d": 33,
+      "w": 50000,
+      "name": "HP Oasis Plaza to Delhi / NCR (Expressway)",
+      "coords": [
+        [
+          28.895,
+          77.682
+        ],
+        [
+          28.785,
+          77.545
+        ],
+        [
+          28.692,
+          77.412
+        ],
+        [
+          28.6289,
+          77.2785
+        ]
+      ]
+    },
+    {
+      "s": 32,
+      "d": 33,
+      "w": 62000,
+      "name": "Delhi-Meerut Expressway (NE-3) Direct",
+      "coords": [
+        [
+          28.9845,
+          77.7064
+        ],
+        [
+          28.825,
+          77.595
+        ],
+        [
+          28.71,
+          77.435
+        ],
+        [
+          28.6289,
+          77.2785
+        ]
+      ]
+    },
+    {
+      "s": 39,
+      "d": 40,
+      "w": 18000,
+      "name": "Mussoorie to Rajpur Diversion (Hill Highway)",
+      "coords": [
+        [
+          30.4598,
+          78.0644
+        ],
+        [
+          30.435,
+          78.072
+        ],
+        [
+          30.408,
+          78.081
+        ],
+        [
+          30.378,
+          78.075
+        ]
+      ]
+    },
+    {
+      "s": 40,
+      "d": 20,
+      "w": 6800,
+      "name": "Mussoorie Diversion to Clock Tower via Rajpur Road",
+      "coords": [
+        [
+          30.378,
+          78.075
+        ],
+        [
+          30.355,
+          78.061
+        ],
+        [
+          30.338,
+          78.051
+        ],
+        [
+          30.32443,
+          78.04184
+        ]
+      ]
+    },
+    {
+      "s": 40,
+      "d": 14,
+      "w": 5200,
+      "name": "Mussoorie Diversion to Garhi Cantt",
+      "coords": [
+        [
+          30.378,
+          78.075
+        ],
+        [
+          30.364,
+          78.052
+        ],
+        [
+          30.3512,
+          78.0315
+        ]
+      ]
+    }
+  ],
+  "nodes_metadata": [
+    {
+      "name": "UPES Bidholi Campus",
+      "type": "education",
+      "category": "education",
+      "icon": "",
+      "desc": "UPES Bidholi Campus, Dehradun foothills."
+    },
+    {
+      "name": "Bidholi Village Chowk",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Connecting UPES campus to Pondha and Dunga bypass."
+    },
+    {
+      "name": "Kandoli UPES Campus",
+      "type": "education",
+      "category": "education",
+      "icon": "",
+      "desc": "UPES Knowledge Acres Campus in Kandoli."
+    },
+    {
+      "name": "Pondha Junction",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Key intersection leading towards Manduwala and Garhi Cantt."
+    },
+    {
+      "name": "Dunga Bypass Junction",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Scenic rural connector connecting western outer Dehradun."
+    },
+    {
+      "name": "Manduwala Chowk",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Major transit hub for students, local buses, and taxis."
+    },
+    {
+      "name": "Dhoolkot Forest Checkpost",
+      "type": "junction",
+      "category": "transit",
+      "icon": "",
+      "desc": "Forest corridor linking Dunga road to Chakrata Highway."
+    },
+    {
+      "name": "Nanda Ki Chowki",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Junction connecting Bidholi feeder road to NH-7 (Chakrata Road)."
+    },
+    {
+      "name": "Premnagar Main Market",
+      "type": "market",
+      "category": "market",
+      "icon": "",
+      "desc": "Bustling market square with commercial activity."
+    },
+    {
+      "name": "IMA (Indian Military Academy)",
+      "type": "landmark",
+      "category": "landmark",
+      "icon": "",
+      "desc": "Historic military academy along national highway."
+    },
+    {
+      "name": "FRI Gate",
+      "type": "landmark",
+      "category": "landmark",
+      "icon": "",
+      "desc": "Forest Research Institute main entrance on Chakrata Road."
+    },
+    {
+      "name": "Ballupur Chowk Flyover",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Major multi-level flyover connecting Cantt & City center."
+    },
+    {
+      "name": "Kishan Nagar Chowk",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Urban junction leading towards Bindal bridge."
+    },
+    {
+      "name": "Bindal Bridge",
+      "type": "bridge",
+      "category": "transit",
+      "icon": "",
+      "desc": "Historic bridge crossing Bindal river into inner city."
+    },
+    {
+      "name": "Garhi Cantt (Birpur Army Area)",
+      "type": "transit",
+      "category": "transit",
+      "icon": "",
+      "desc": "Peaceful army cantonment zone alternate route."
+    },
+    {
+      "name": "Kaulagarh / ONGC Tel Bhavan",
+      "type": "landmark",
+      "category": "landmark",
+      "icon": "",
+      "desc": "Headquarters of ONGC with wide tree-lined avenues."
+    },
+    {
+      "name": "Majra / Shimla Bypass",
+      "type": "junction",
+      "category": "transit",
+      "icon": "",
+      "desc": "Southern artery bypassing the inner city center."
+    },
+    {
+      "name": "ISBT Dehradun",
+      "type": "terminal",
+      "category": "transit",
+      "icon": "",
+      "desc": "Inter-State Bus Terminal connecting Uttarakhand."
+    },
+    {
+      "name": "Saharanpur Chowk",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Historic southern entrance to Dehradun old bazaar."
+    },
+    {
+      "name": "Prince Chowk",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Transit square connecting railway station road to Clock Tower."
+    },
+    {
+      "name": "Clock Tower (Ghanta Ghar)",
+      "type": "landmark",
+      "category": "landmark",
+      "icon": "",
+      "desc": "The iconic 6-faced clock tower at the heart of Dehradun."
+    },
+    {
+      "name": "Indian Oil Petrol Pump (Pondha)",
+      "type": "fuel",
+      "category": "petrol_pump",
+      "icon": "",
+      "desc": "Refueling stop along the Bidholi-Pondha route."
+    },
+    {
+      "name": "Friend's House (Manduwala)",
+      "type": "home",
+      "category": "friends_house",
+      "icon": "",
+      "desc": "Residential home stop in Manduwala student enclave."
+    },
+    {
+      "name": "The Village Cafe & Restaurant",
+      "type": "food",
+      "category": "restaurant",
+      "icon": "",
+      "desc": "Popular highway food stop for snacks and meals."
+    },
+    {
+      "name": "HP Petrol Pump (Nanda Ki Chowki)",
+      "type": "fuel",
+      "category": "petrol_pump",
+      "icon": "",
+      "desc": "Highway fueling station at Chakrata Road junction."
+    },
+    {
+      "name": "Friend's House (Ballupur)",
+      "type": "home",
+      "category": "friends_house",
+      "icon": "",
+      "desc": "Residential stop in central Dehradun Vasant Vihar colony."
+    },
+    {
+      "name": "Kalsang / Black Pepper Restaurant",
+      "type": "food",
+      "category": "restaurant",
+      "icon": "",
+      "desc": "Famous dining destination for authentic food."
+    },
+    {
+      "name": "Doiwala / Nepali Farm Junction",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Key highway junction connecting Dehradun, Rishikesh & Haridwar."
+    },
+    {
+      "name": "Rishikesh (Triveni Ghat / Ganga Bank)",
+      "type": "spiritual",
+      "category": "river_ganga",
+      "icon": "",
+      "desc": "Sacred confluence on the banks of holy Ganga with evening Aarti."
+    },
+    {
+      "name": "Haridwar (Har Ki Pauri / Ganga River)",
+      "type": "spiritual",
+      "category": "river_ganga",
+      "icon": "",
+      "desc": "World-famous holy Ganga River ghat where thousands gather for Ganga Aarti."
+    },
+    {
+      "name": "Roorkee (IIT Roorkee / NH-334)",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Historic engineering university town and highway junction on NH-334."
+    },
+    {
+      "name": "Muzaffarnagar (Rampur Tiraha Junction)",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Crucial junction on the Delhi-Dehradun economic corridor."
+    },
+    {
+      "name": "Meerut Bypass (Partapur Interchange)",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Access point for the 14-lane Delhi-Meerut Expressway."
+    },
+    {
+      "name": "Delhi / NCR (Anand Vihar / Connaught Place)",
+      "type": "city",
+      "category": "destination",
+      "icon": "",
+      "desc": "National Capital Region terminal and central business district."
+    },
+    {
+      "name": "Cheetal Grand Highway Resort & Dhaba (Khatauli)",
+      "type": "food",
+      "category": "highway_restaurant",
+      "icon": "",
+      "desc": "Iconic multi-cuisine highway resort renowned for paneer pakodas & South Indian meals."
+    },
+    {
+      "name": "Namaste Midway Food Plaza (Mansurpur)",
+      "type": "food",
+      "category": "highway_restaurant",
+      "icon": "",
+      "desc": "Premier highway oasis with Haldiram's, McDonald's, Costa Coffee & clean restrooms."
+    },
+    {
+      "name": "Indian Oil Swagat Highway Plaza & Fuel (Roorkee Bypass)",
+      "type": "fuel",
+      "category": "highway_fuel",
+      "icon": "",
+      "desc": "24/7 highway fueling, EV hyper-charging, convenience store & driver lounge."
+    },
+    {
+      "name": "HP Auto Care Oasis Mega Plaza (Meerut Expressway)",
+      "type": "fuel",
+      "category": "highway_fuel",
+      "icon": "",
+      "desc": "State-of-the-art expressway oasis with high-speed EV chargers and food court."
+    },
+    {
+      "name": "Chotiwala Authentic Ganga Restaurant (Rishikesh)",
+      "type": "food",
+      "category": "highway_restaurant",
+      "icon": "",
+      "desc": "Heritage 1958 vegetarian dining landmark right beside the sacred Ganga river."
+    },
+    {
+      "name": "Mussoorie (Mall Road / Library Chowk)",
+      "type": "hill_station",
+      "category": "landmark",
+      "icon": "",
+      "desc": "Famous Queen of the Hills hill station overlooking the Doon Valley."
+    },
+    {
+      "name": "Mussoorie Diversion / Rajpur Road",
+      "type": "junction",
+      "category": "junction",
+      "icon": "",
+      "desc": "Gateway junction connecting Dehradun city center to Mussoorie Hill Road."
+    }
+  ],
+  "origin": {
+    "id": 0,
+    "name": "UPES Bidholi Campus",
+    "lat": 30.41589,
+    "lng": 77.96644,
+    "icon": ""
+  },
+  "destination": {
+    "id": 20,
+    "name": "Clock Tower (Ghanta Ghar)",
+    "lat": 30.32443,
+    "lng": 78.04184,
+    "icon": ""
+  },
+  "waypoints_requested": [
+    {
+      "id": 21,
+      "name": "Indian Oil Petrol Pump (Pondha)",
+      "category": "petrol_pump",
+      "icon": "",
+      "lat": 30.3805,
+      "lng": 77.974
+    },
+    {
+      "id": 22,
+      "name": "Friend's House (Manduwala)",
+      "category": "friends_house",
+      "icon": "",
+      "lat": 30.3685,
+      "lng": 77.9658
+    },
+    {
+      "id": 23,
+      "name": "The Village Cafe & Restaurant",
+      "category": "restaurant",
+      "icon": "",
+      "lat": 30.361,
+      "lng": 77.9625
+    }
+  ],
+  "optimal_visitation_order": [
+    "UPES Bidholi Campus",
+    "Indian Oil Petrol Pump (Pondha)",
+    "Friend's House (Manduwala)",
+    "The Village Cafe & Restaurant",
+    "Clock Tower (Ghanta Ghar)"
+  ],
+  "summary": {
+    "total_distance_meters": 19500,
+    "total_distance_km": 19.5,
+    "estimated_driving_time_mins": 54,
+    "total_stops": 3,
+    "total_nodes_traversed": 17
+  },
+  "legs": [
+    {
+      "leg_index": 1,
+      "from_id": 0,
+      "from_name": "UPES Bidholi Campus",
+      "to_id": 21,
+      "to_name": "Indian Oil Petrol Pump (Pondha)",
+      "distance_meters": 4800,
+      "distance_km": 4.8,
+      "node_sequence": [
+        0,
+        1,
+        2,
+        3,
+        21
+      ]
+    },
+    {
+      "leg_index": 2,
+      "from_id": 21,
+      "from_name": "Indian Oil Petrol Pump (Pondha)",
+      "to_id": 22,
+      "to_name": "Friend's House (Manduwala)",
+      "distance_meters": 1900,
+      "distance_km": 1.9,
+      "node_sequence": [
+        21,
+        5,
+        22
+      ]
+    },
+    {
+      "leg_index": 3,
+      "from_id": 22,
+      "from_name": "Friend's House (Manduwala)",
+      "to_id": 23,
+      "to_name": "The Village Cafe & Restaurant",
+      "distance_meters": 1100,
+      "distance_km": 1.1,
+      "node_sequence": [
+        22,
+        5,
+        23
+      ]
+    },
+    {
+      "leg_index": 4,
+      "from_id": 23,
+      "from_name": "The Village Cafe & Restaurant",
+      "to_id": 20,
+      "to_name": "Clock Tower (Ghanta Ghar)",
+      "distance_meters": 11700,
+      "distance_km": 11.7,
+      "node_sequence": [
+        23,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        20
+      ]
+    }
+  ],
+  "full_node_path": [
+    0,
+    1,
+    2,
+    3,
+    21,
+    5,
+    22,
+    5,
+    23,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    20
+  ],
+  "coordinates_polyline": [
+    [
+      30.41589,
+      77.96644
+    ],
+    [
+      30.4148,
+      77.9666
+    ],
+    [
+      30.4136,
+      77.967
+    ],
+    [
+      30.4123,
+      77.9675
+    ],
+    [
+      30.4112,
+      77.9679
+    ],
+    [
+      30.4105,
+      77.9682
+    ],
+    [
+      30.4088,
+      77.9688
+    ],
+    [
+      30.4071,
+      77.9697
+    ],
+    [
+      30.4054,
+      77.9706
+    ],
+    [
+      30.4036,
+      77.9715
+    ],
+    [
+      30.4018,
+      77.9723
+    ],
+    [
+      30.4,
+      77.973
+    ],
+    [
+      30.3981,
+      77.9735
+    ],
+    [
+      30.396,
+      77.9742
+    ],
+    [
+      30.3938,
+      77.975
+    ],
+    [
+      30.3915,
+      77.976
+    ],
+    [
+      30.3892,
+      77.9769
+    ],
+    [
+      30.3872,
+      77.9776
+    ],
+    [
+      30.3855,
+      77.9782
+    ],
+    [
+      30.3828,
+      77.9758
+    ],
+    [
+      30.3805,
+      77.974
+    ],
+    [
+      30.3752,
+      77.97
+    ],
+    [
+      30.371,
+      77.967
+    ],
+    [
+      30.3681,
+      77.9652
+    ],
+    [
+      30.3683,
+      77.9655
+    ],
+    [
+      30.3685,
+      77.9658
+    ],
+    [
+      30.3683,
+      77.9655
+    ],
+    [
+      30.3681,
+      77.9652
+    ],
+    [
+      30.3642,
+      77.9636
+    ],
+    [
+      30.361,
+      77.9625
+    ],
+    [
+      30.3562,
+      77.9606
+    ],
+    [
+      30.3515,
+      77.9589
+    ],
+    [
+      30.3475,
+      77.9576
+    ],
+    [
+      30.345,
+      77.961
+    ],
+    [
+      30.3428,
+      77.964
+    ],
+    [
+      30.341,
+      77.9666
+    ],
+    [
+      30.3396,
+      77.9685
+    ],
+    [
+      30.338,
+      77.9734
+    ],
+    [
+      30.3365,
+      77.9782
+    ],
+    [
+      30.335,
+      77.9826
+    ],
+    [
+      30.3341,
+      77.9862
+    ],
+    [
+      30.3351,
+      77.9918
+    ],
+    [
+      30.3362,
+      77.997
+    ],
+    [
+      30.3374,
+      78.0016
+    ],
+    [
+      30.3382,
+      78.0053
+    ],
+    [
+      30.3385,
+      78.0105
+    ],
+    [
+      30.3388,
+      78.0156
+    ],
+    [
+      30.3391,
+      78.0205
+    ],
+    [
+      30.3376,
+      78.024
+    ],
+    [
+      30.3362,
+      78.0272
+    ],
+    [
+      30.3352,
+      78.0294
+    ],
+    [
+      30.3347,
+      78.0308
+    ],
+    [
+      30.3325,
+      78.0328
+    ],
+    [
+      30.3304,
+      78.0346
+    ],
+    [
+      30.3286,
+      78.0362
+    ],
+    [
+      30.327,
+      78.0382
+    ],
+    [
+      30.3255,
+      78.0402
+    ],
+    [
+      30.32443,
+      78.04184
+    ]
+  ],
+  "turn_by_turn_directions": [
+    {
+      "step": 1,
+      "node_id": 0,
+      "name": "UPES Bidholi Campus",
+      "category": "education",
+      "icon": "",
+      "lat": 30.41589,
+      "lng": 77.96644,
+      "desc": "UPES Bidholi Campus, Dehradun foothills.",
+      "step_type": "origin",
+      "leg_meters": 0,
+      "cumulative_km": 0.0,
+      "road": "Start Point"
+    },
+    {
+      "step": 2,
+      "node_id": 1,
+      "name": "Bidholi Village Chowk",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.4105,
+      "lng": 77.9682,
+      "desc": "Connecting UPES campus to Pondha and Dunga bypass.",
+      "step_type": "transit",
+      "leg_meters": 800,
+      "cumulative_km": 0.8,
+      "road": "Bidholi Campus Road"
+    },
+    {
+      "step": 3,
+      "node_id": 2,
+      "name": "Kandoli UPES Campus",
+      "category": "education",
+      "icon": "",
+      "lat": 30.3981,
+      "lng": 77.9735,
+      "desc": "UPES Knowledge Acres Campus in Kandoli.",
+      "step_type": "transit",
+      "leg_meters": 1600,
+      "cumulative_km": 2.4,
+      "road": "Bidholi-Kandoli Road"
+    },
+    {
+      "step": 4,
+      "node_id": 3,
+      "name": "Pondha Junction",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3855,
+      "lng": 77.9782,
+      "desc": "Key intersection leading towards Manduwala and Garhi Cantt.",
+      "step_type": "transit",
+      "leg_meters": 1800,
+      "cumulative_km": 4.2,
+      "road": "Kandoli-Pondha Road"
+    },
+    {
+      "step": 5,
+      "node_id": 21,
+      "name": "Indian Oil Petrol Pump (Pondha)",
+      "category": "petrol_pump",
+      "icon": "",
+      "lat": 30.3805,
+      "lng": 77.974,
+      "desc": "Refueling stop along the Bidholi-Pondha route.",
+      "step_type": "waypoint",
+      "leg_meters": 600,
+      "cumulative_km": 4.8,
+      "road": "Pondha Petrol Pump Approach"
+    },
+    {
+      "step": 6,
+      "node_id": 5,
+      "name": "Manduwala Chowk",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3681,
+      "lng": 77.9652,
+      "desc": "Major transit hub for students, local buses, and taxis.",
+      "step_type": "transit",
+      "leg_meters": 1700,
+      "cumulative_km": 6.5,
+      "road": "Petrol Pump to Manduwala Link"
+    },
+    {
+      "step": 7,
+      "node_id": 22,
+      "name": "Friend's House (Manduwala)",
+      "category": "friends_house",
+      "icon": "",
+      "lat": 30.3685,
+      "lng": 77.9658,
+      "desc": "Residential home stop in Manduwala student enclave.",
+      "step_type": "waypoint",
+      "leg_meters": 200,
+      "cumulative_km": 6.7,
+      "road": "Manduwala Colony Lane"
+    },
+    {
+      "step": 8,
+      "node_id": 5,
+      "name": "Manduwala Chowk",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3681,
+      "lng": 77.9652,
+      "desc": "Major transit hub for students, local buses, and taxis.",
+      "step_type": "transit",
+      "leg_meters": 200,
+      "cumulative_km": 6.9,
+      "road": "Manduwala Colony Lane"
+    },
+    {
+      "step": 9,
+      "node_id": 23,
+      "name": "The Village Cafe & Restaurant",
+      "category": "restaurant",
+      "icon": "",
+      "lat": 30.361,
+      "lng": 77.9625,
+      "desc": "Popular highway food stop for snacks and meals.",
+      "step_type": "waypoint",
+      "leg_meters": 900,
+      "cumulative_km": 7.8,
+      "road": "Manduwala to Village Restaurant"
+    },
+    {
+      "step": 10,
+      "node_id": 7,
+      "name": "Nanda Ki Chowki",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3475,
+      "lng": 77.9576,
+      "desc": "Junction connecting Bidholi feeder road to NH-7 (Chakrata Road).",
+      "step_type": "transit",
+      "leg_meters": 1800,
+      "cumulative_km": 9.6,
+      "road": "Village Restaurant to Nanda Ki Chowki"
+    },
+    {
+      "step": 11,
+      "node_id": 8,
+      "name": "Premnagar Main Market",
+      "category": "market",
+      "icon": "",
+      "lat": 30.3396,
+      "lng": 77.9685,
+      "desc": "Bustling market square with commercial activity.",
+      "step_type": "transit",
+      "leg_meters": 1400,
+      "cumulative_km": 11.0,
+      "road": "Chakrata Road (NH-7) to Premnagar"
+    },
+    {
+      "step": 12,
+      "node_id": 9,
+      "name": "IMA (Indian Military Academy)",
+      "category": "landmark",
+      "icon": "",
+      "lat": 30.3341,
+      "lng": 77.9862,
+      "desc": "Historic military academy along national highway.",
+      "step_type": "transit",
+      "leg_meters": 2000,
+      "cumulative_km": 13.0,
+      "road": "Premnagar to IMA Gate"
+    },
+    {
+      "step": 13,
+      "node_id": 10,
+      "name": "FRI Gate",
+      "category": "landmark",
+      "icon": "",
+      "lat": 30.3382,
+      "lng": 78.0053,
+      "desc": "Forest Research Institute main entrance on Chakrata Road.",
+      "step_type": "transit",
+      "leg_meters": 2100,
+      "cumulative_km": 15.1,
+      "road": "IMA to FRI Main Gate"
+    },
+    {
+      "step": 14,
+      "node_id": 11,
+      "name": "Ballupur Chowk Flyover",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3391,
+      "lng": 78.0205,
+      "desc": "Major multi-level flyover connecting Cantt & City center.",
+      "step_type": "transit",
+      "leg_meters": 1600,
+      "cumulative_km": 16.7,
+      "road": "FRI to Ballupur Chowk"
+    },
+    {
+      "step": 15,
+      "node_id": 12,
+      "name": "Kishan Nagar Chowk",
+      "category": "junction",
+      "icon": "",
+      "lat": 30.3347,
+      "lng": 78.0308,
+      "desc": "Urban junction leading towards Bindal bridge.",
+      "step_type": "transit",
+      "leg_meters": 1200,
+      "cumulative_km": 17.9,
+      "road": "Ballupur to Kishan Nagar"
+    },
+    {
+      "step": 16,
+      "node_id": 13,
+      "name": "Bindal Bridge",
+      "category": "transit",
+      "icon": "",
+      "lat": 30.3286,
+      "lng": 78.0362,
+      "desc": "Historic bridge crossing Bindal river into inner city.",
+      "step_type": "transit",
+      "leg_meters": 850,
+      "cumulative_km": 18.75,
+      "road": "Kishan Nagar to Bindal Bridge"
+    },
+    {
+      "step": 17,
+      "node_id": 20,
+      "name": "Clock Tower (Ghanta Ghar)",
+      "category": "landmark",
+      "icon": "",
+      "lat": 30.32443,
+      "lng": 78.04184,
+      "desc": "The iconic 6-faced clock tower at the heart of Dehradun.",
+      "step_type": "destination",
+      "leg_meters": 750,
+      "cumulative_km": 19.5,
+      "road": "Bindal Bridge to Clock Tower"
+    }
+  ]
+}
