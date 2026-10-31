@@ -35,7 +35,7 @@ Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-sourc
 
 #### Terminal Benchmark Runs (3 Machines, 3 Runs Each)
 
-##### Machine 1: Intel Core i7-13700HX (Vansh Shah)
+##### Machine 1: Intel Core i7-13700HX (Vansh)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
 | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="300" /> |
@@ -45,7 +45,7 @@ Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-sourc
 | :---: | :---: | :---: |
 | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/ambrish%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%203.jpeg" width="300" /> |
 
-##### Machine 3: Intel Core i5-12500H (Lux)
+##### Machine 3: Intel Core i5-12500H (Lakshya)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
 | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%203.jpeg" width="300" /> |
