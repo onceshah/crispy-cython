@@ -28,7 +28,7 @@ from crispy_cython.tsp import (
 # Convenient top-level alias for dijkstra
 solve_dijkstra = dijkstra.dijkstra
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Vansh Shah"
 __license__ = "MIT"
 

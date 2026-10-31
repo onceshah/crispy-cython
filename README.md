@@ -30,7 +30,7 @@ This project implements an ultra-optimized hybrid routing system where performan
 
 ### 2. Cross-Machine Benchmark Evaluation (3 Laptops, 3 Runs Each)
 
-![Dijkstra Multi-Machine Benchmark](assets/dijkstra_benchmark_3machines.jpg)
+![Dijkstra Multi-Machine Benchmark](https://raw.githubusercontent.com/onceshah/crispy-cython/main/assets/dijkstra_benchmark_3machines.jpg)
 
 #### Hardware Comparison & Speedup Table
 
@@ -48,17 +48,17 @@ This project implements an ultra-optimized hybrid routing system where performan
 ##### Machine 1: Intel Core i7-13700HX (Vansh)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="300" /> |
+| <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="300" /> |
 
 ##### Machine 2: Intel Core i5-1135G7 (Ambrish)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/ambrish%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%203.jpeg" width="300" /> |
+| <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/ambrish%202.jpeg" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%203.jpeg" width="300" /> |
 
 ##### Machine 3: Intel Core i5-12500H (Lakshya)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%203.jpeg" width="300" /> |
+| <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/LUX%202.jpeg" width="300" /> | <img src="https://raw.githubusercontent.com/onceshah/crispy-cython/main/dijkstra_c_vs_python/Command%20prompt%20test/LUX%203.jpeg" width="300" /> |
 
 ---
 
@@ -84,17 +84,17 @@ This project implements an ultra-optimized hybrid routing system where performan
 ##### Route Selection Dialog
 The user selects a Start Point, Destination, and multiple intermediate stops (e.g., Mussoorie Mall Road, Kempty Falls, Jharipani Waterfall, Clock Tower). The planner floats centrally above the map:
 
-![Frontend Route Planner](assets/frontend_route_planner.jpg)
+![Frontend Route Planner](https://raw.githubusercontent.com/onceshah/crispy-cython/main/assets/frontend_route_planner.jpg)
 
 ##### Turn-by-Turn Navigation & Itinerary Drawer
 Clicking the "Directions" button opens the slide-out navigation panel, rendering step-by-step driving maneuvers, leg distances, and road names while preserving live map visibility:
 
-![Frontend Trip Directions](assets/frontend_trip_directions.jpg)
+![Frontend Trip Directions](https://raw.githubusercontent.com/onceshah/crispy-cython/main/assets/frontend_trip_directions.jpg)
 
 ##### Live Route Overview & Floating Metrics Dashboard
 Once the route is solved, the central route planner slides down and hides, providing an unobstructed view of the complete mountain route with custom marker pins and the bottom summary dashboard:
 
-![Frontend Route Overview](assets/frontend_route_overview.jpg)
+![Frontend Route Overview](https://raw.githubusercontent.com/onceshah/crispy-cython/main/assets/frontend_route_overview.jpg)
 
 
 ---
@@ -183,7 +183,7 @@ streamlit run dijkstra_c_vs_python/streamlit_app.py
 
 Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ closed tours.
 
-![TSP Benchmark Comparison](tsp_benchmark_comparison.png)
+![TSP Benchmark Comparison](https://raw.githubusercontent.com/onceshah/crispy-cython/main/tsp_benchmark_comparison.png)
 
 ### Performance Benchmark (Pure Python vs C++ Cython)
 

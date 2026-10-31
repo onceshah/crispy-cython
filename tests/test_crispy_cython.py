@@ -71,6 +71,6 @@ def test_tsp_solver_correctness():
 
 def test_package_metadata_and_acceleration():
     assert hasattr(cc, "__version__")
-    assert cc.__version__ == "0.1.0"
+    assert cc.__version__ == "0.1.1"
     assert dijkstra.HAS_CYTHON is True
     assert tsp.HAS_CYTHON is True
