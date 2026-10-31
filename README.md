@@ -9,16 +9,16 @@
 A collection of high-performance graph algorithms comparing **Pure Python** against **Native C/C++** accelerated using **Cython**.
 
 Features two production-grade modules:
-1. **DoonRoute (Dijkstra Shortest Path Engine)**: Fast matrix and path reconstruction engine featuring a **real-world Dehradun road routing engine** from **UPES Bidholi to Clock Tower (Ghanta Ghar)** with multi-stop optimization, live OpenStreetMap road snapping, liquid glassmorphism, and empirical multi-machine hardware benchmarks.
+1. **Cython C++ Dijkstra Implementation**: Fast matrix and path reconstruction engine featuring a **real-world Dehradun road routing engine** from **UPES Bidholi to Clock Tower (Ghanta Ghar)** with multi-stop optimization, live OpenStreetMap road snapping, liquid glassmorphism, and empirical multi-machine hardware benchmarks.
 2. **Traveling Salesperson Problem (TSP)**: Exact factorial brute-force solver published on PyPI as [`tsp-fast-solver`](https://pypi.org/project/tsp-fast-solver/).
 
 ---
 
-## 🚀 Module 1: DoonRoute · Cython C++ Dijkstra Engine
+## Cython C++ Dijkstra Implementation
 
 Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-source shortest paths and reconstructs optimal routes on dense matrix graphs and real-world metropolitan networks.
 
-### 📊 Cross-Machine Benchmark Evaluation (3 Laptops, 3 Runs Each)
+### Cross-Machine Benchmark Evaluation (3 Laptops, 3 Runs Each)
 
 ![Dijkstra Multi-Machine Benchmark](assets/dijkstra_benchmark_3machines.jpg)
 
@@ -33,24 +33,24 @@ Located in [`dijkstra_c_vs_python/`](dijkstra_c_vs_python/). Solves single-sourc
 | **Synthetic $V = 1000$** | 1,000,000 cells | **$12\times$ faster** | **$15\times$ faster** | **$16\times$ faster** |
 | **Synthetic $V = 1500$** | 2,250,000 cells | $192\,\text{ms} \to 14.9\,\text{ms}$ (**$13\times$**) | $176\,\text{ms} \to 11.1\,\text{ms}$ (**$16\times$**) | $125\,\text{ms} \to 7.5\,\text{ms}$ (**$17\times$**) |
 
-#### Terminal Benchmark Runs
+#### Terminal Benchmark Runs (3 Machines, 3 Runs Each)
 
 ##### Machine 1: Intel Core i7-13700HX (Vansh Shah)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="280" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="280" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="280" /> |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(1).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(2).png" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/VANSH%201%20(3).png" width="300" /> |
 
 ##### Machine 2: Intel Core i5-1135G7 (Ambrish)
-| Run 1 | Runs 2 & 3 |
-| :---: | :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="420" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%202%20AND%203.jpeg" width="420" /> |
+| Run 1 | Run 2 | Run 3 |
+| :---: | :---: | :---: |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRISH%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/ambrish%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/AMBRIS%203.jpeg" width="300" /> |
 
 ##### Machine 3: Intel Core i5-12500H (Lux)
-| Multi-Run Terminal Output |
-| :---: |
-| <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="550" /> |
+| Run 1 | Run 2 | Run 3 |
+| :---: | :---: | :---: |
+| <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%201.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%202.jpeg" width="300" /> | <img src="dijkstra_c_vs_python/Command%20prompt%20test/LUX%203.jpeg" width="300" /> |
 
-### 🗺️ Real-World Dehradun Routing Engine
+### Real-World Dehradun Routing Engine
 - **Origin**: UPES Bidholi Campus (`30.41589° N, 77.96644° E`)
 - **Destination**: Clock Tower (Ghanta Ghar), Dehradun (`30.32443° N, 78.04184° E`)
 - **Multi-Stop Permutation Solver**: Optimizes intermediate stops (e.g. Indian Oil Petrol Pump, Manduwala Friend's House, The Village Restaurant).
@@ -67,7 +67,7 @@ streamlit run dijkstra_c_vs_python/streamlit_app.py
 
 ---
 
-## 🚀 Module 2: Traveling Salesperson Problem (TSP)
+## Module 2: Traveling Salesperson Problem (TSP)
 
 Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ closed tours.
 
@@ -76,7 +76,7 @@ Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ c
 ### Performance Benchmark (Pure Python vs C++ Cython)
 
 | Graph Size ($N$) | Routes $(N-1)!$ | Pure Python | C++ (Cython) | Speedup |
-|:---:|:---:|:---:|:---:|:---:|
+| :---: | :---: | :---: | :---: | :---: |
 | $N = 8$ | 5,040 | 1.65 ms | 0.021 ms | **~79x** |
 | $N = 10$ | 362,880 | 145.2 ms | 1.39 ms | **~104x** |
 | $N = 11$ | 3,628,800 | 1.61 s | 14.3 ms | **~112x** |
@@ -91,7 +91,7 @@ Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ c
 
 ---
 
-## ⚡ Why is C++ with Cython So Much Faster?
+## Why is C++ with Cython So Much Faster?
 
 1. **Memory Layout & Cache Locality**: C++ stores graph matrices and distance tables in contiguous 1D memory buffers (`graph[u * V + v]`). These buffers fit directly into CPU L1/L2 caches, eliminating cache misses. In contrast, Python nested lists contain heap-allocated pointer arrays pointing to boxed integer objects scattered across memory.
 2. **Zero Heap Allocation in Inner Loops**: C++ performs in-place array scans with raw pointers (`const int* row = &graph[u * V]`). Python creates temporary iterator and tuple objects that trigger garbage collection overhead.
@@ -99,7 +99,7 @@ Located in `tsp/`. Exact factorial brute-force solver exploring all $(N - 1)!$ c
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Cython/
@@ -116,6 +116,7 @@ Cython/
 │   ├── dehradun_map/
 │   │   ├── dehradun_graph.py           # Real Dehradun road network graph
 │   │   └── generate_map.py             # Generates interactive Leaflet HTML map
+│   ├── Command prompt test/            # Terminal verification runs (3 runs on 3 laptops)
 │   ├── tests/
 │   │   └── test_dijkstra.py            # Pytest test suite
 │   ├── benchmark.py                    # Dijkstra benchmark script
@@ -140,7 +141,7 @@ Cython/
 
 ---
 
-## 🛠️ Quick Commands
+## Quick Commands
 
 ### 1. Build and Run Dijkstra Solvers
 ```bash
@@ -157,9 +158,6 @@ python dehradun_map/generate_map.py
 
 # Run unit tests
 python -m pytest tests/test_dijkstra.py -v
-
-# Generate benchmark infographic chart
-python generate_chart.py
 
 # Package sdist for PyPI
 python -m build --sdist --no-isolation
@@ -181,5 +179,5 @@ python -m pytest tests/
 
 ---
 
-## 📜 License
+## License
 MIT License. See [LICENSE](LICENSE) for details.

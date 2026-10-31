@@ -1,4 +1,4 @@
-# DoonRoute · High-Performance Cython C++ Dijkstra Engine
+# Cython C++ Dijkstra Implementation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python: 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,7 +6,7 @@
 [![Cython](https://img.shields.io/badge/Cython-3.0+-gold.svg)](https://cython.org/)
 [![Platform: Windows | Linux | macOS](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](#)
 
-A high-performance **Dijkstra Shortest Path Engine** and **Multi-Stop Route Optimizer** combining native **C++** with a compiled **Cython** wrapper, benchmarked side-by-side against **Pure Python** across three distinct hardware machines. 
+A high-performance **Dijkstra Shortest Path Engine** and **Multi-Stop Route Optimizer** combining native **C++** with a compiled **Cython** wrapper, benchmarked side-by-side against **Pure Python** across three distinct hardware machines.
 
 Built on a real-world **Dehradun Road Network Graph** navigating from **UPES Bidholi Campus** to the **Clock Tower (Ghanta Ghar)**, featuring live OpenStreetMap road snapping, liquid glassmorphic web visualization, and an industry-standard JSON routing payload.
 
@@ -39,9 +39,9 @@ Built on a real-world **Dehradun Road Network Graph** navigating from **UPES Bid
 
 In modern GPS navigation and metropolitan route planning, graph routing queries must be solved in sub-millisecond latencies across hundreds of thousands of vertices. While Python offers rapid prototyping and high expressiveness, its interpreted bytecode loops, dynamic type dispatch, and object overhead impose severe performance penalties during heavy graph relaxation routines.
 
-**DoonRoute** solves this by implementing Dijkstra's algorithm directly in native **C++**, compiled to machine code and linked to Python via **Cython**:
+This project implements Dijkstra's algorithm directly in native **C++**, compiled to machine code and linked to Python via **Cython**:
 - **Speed**: Delivers **up to 31x acceleration** over pure Python across dense and real-world graphs.
-- **Real-World Corridor**: Models the 19.5 km transit corridor connecting **UPES Bidholi Campus $\to$ Indian Oil Petrol Pump $\to$ Manduwala $\to$ Premnagar $\to$ Clock Tower (Ghanta Ghar)**.
+- **Real-World Corridor**: Models the 19.5 km transit corridor connecting **UPES Bidholi Campus -> Indian Oil Petrol Pump -> Manduwala -> Premnagar -> Clock Tower (Ghanta Ghar)**.
 - **Interoperability**: Decouples the compiled C++ solver from frontend visualization through a comprehensive JSON data contract (`route_path.json`).
 
 ---
@@ -75,8 +75,11 @@ dijkstra_c_vs_python/
 │   ├── VANSH 1 (2).png                 # Vansh (i7-13700HX) - Run 2
 │   ├── VANSH 1 (3).png                 # Vansh (i7-13700HX) - Run 3
 │   ├── AMBRISH 1.jpeg                  # Ambrish (i5-1135G7) - Run 1
-│   ├── AMBRIS 2 AND 3.jpeg             # Ambrish (i5-1135G7) - Runs 2 & 3
-│   └── LUX 1.jpeg                      # Lux (i5-12500H) - Runs 1, 2 & 3
+│   ├── ambrish 2.jpeg                  # Ambrish (i5-1135G7) - Run 2
+│   ├── AMBRIS 3.jpeg                   # Ambrish (i5-1135G7) - Run 3
+│   ├── LUX 1.jpeg                      # Lux (i5-12500H) - Run 1
+│   ├── LUX 2.jpeg                      # Lux (i5-12500H) - Run 2
+│   └── LUX 3.jpeg                      # Lux (i5-12500H) - Run 3
 ├── app.py                              # Pure Python liquid glass web application (http.server)
 ├── streamlit_app.py                    # Streamlit component application
 ├── benchmark.py                        # Automated multi-tier benchmarking harness
@@ -116,7 +119,7 @@ dijkstra_c_vs_python/
    ```bash
    pip install -e .
    ```
-   > *Note: If a C++ compiler is not present, `setup.py` automatically falls back to pure Python without failing.*
+   *Note: If a C++ compiler is not present, `setup.py` automatically falls back to pure Python without failing.*
 
 4. **Verify installation with tests:**
    ```bash
@@ -134,7 +137,7 @@ Dijkstra's algorithm finds the shortest path between nodes in a weighted graph w
 - **Path Reconstruction**: After the shortest path distances are finalized, backtracking through the `parent` array reconstructs the exact sequence of graph vertices.
 
 ### Multi-Stop Permutation Optimization
-When visiting $K$ intermediate stops (such as Refueling $\to$ Friend's House $\to$ Restaurant) between Start Point $S$ and Destination $D$, the visitation order drastically impacts total travel time.
+When visiting $K$ intermediate stops (such as Refueling -> Friend's House -> Restaurant) between Start Point $S$ and Destination $D$, the visitation order drastically impacts total travel time.
 - The solver computes the cost matrix between all requested waypoints.
 - It tests all $K!$ permutations to discover the optimal permutation that minimizes:
   $$\text{Total Distance} = \text{dist}(S, P_{\pi(1)}) + \sum_{i=1}^{K-1} \text{dist}(P_{\pi(i)}, P_{\pi(i+1)}) + \text{dist}(P_{\pi(K)}, D)$$
@@ -153,7 +156,7 @@ When visiting $K$ intermediate stops (such as Refueling $\to$ Friend's House $\t
 
 ## 5. Intersection Snapping & Road Geometry
 
-Standard graph theory algorithms treat edges as straight euclidean lines (chords), which cuts across buildings and rivers. **DoonRoute** implements true road-following geometry:
+Standard graph theory algorithms treat edges as straight euclidean lines (chords), which cuts across buildings and rivers. This project implements true road-following geometry:
 
 1. **Curved Polyline Mapping**: Every edge in the Dehradun graph stores dense GPS coordinate arrays tracing real terrain bends.
 2. **Live OpenStreetMap (OSRM) Road Snapping**: The web interface queries OpenStreetMap's routing engine to snap lines directly to physical road geometry with lane-level fidelity.
@@ -191,17 +194,17 @@ To ensure scientific rigor, benchmarks were executed **3 times on each of 3 sepa
 #### Machine 1: Intel Core i7-13700HX (Vansh Shah)
 | Run 1 | Run 2 | Run 3 |
 | :---: | :---: | :---: |
-| <img src="Command%20prompt%20test/VANSH%201%20(1).png" width="280" /> | <img src="Command%20prompt%20test/VANSH%201%20(2).png" width="280" /> | <img src="Command%20prompt%20test/VANSH%201%20(3).png" width="280" /> |
+| <img src="Command%20prompt%20test/VANSH%201%20(1).png" width="300" /> | <img src="Command%20prompt%20test/VANSH%201%20(2).png" width="300" /> | <img src="Command%20prompt%20test/VANSH%201%20(3).png" width="300" /> |
 
 #### Machine 2: Intel Core i5-1135G7 (Ambrish)
-| Run 1 | Runs 2 & 3 |
-| :---: | :---: |
-| <img src="Command%20prompt%20test/AMBRISH%201.jpeg" width="420" /> | <img src="Command%20prompt%20test/AMBRIS%202%20AND%203.jpeg" width="420" /> |
+| Run 1 | Run 2 | Run 3 |
+| :---: | :---: | :---: |
+| <img src="Command%20prompt%20test/AMBRISH%201.jpeg" width="300" /> | <img src="Command%20prompt%20test/ambrish%202.jpeg" width="300" /> | <img src="Command%20prompt%20test/AMBRIS%203.jpeg" width="300" /> |
 
 #### Machine 3: Intel Core i5-12500H (Lux)
-| Multi-Run Terminal Output |
-| :---: |
-| <img src="Command%20prompt%20test/LUX%201.jpeg" width="550" /> |
+| Run 1 | Run 2 | Run 3 |
+| :---: | :---: | :---: |
+| <img src="Command%20prompt%20test/LUX%201.jpeg" width="300" /> | <img src="Command%20prompt%20test/LUX%202.jpeg" width="300" /> | <img src="Command%20prompt%20test/LUX%203.jpeg" width="300" /> |
 
 ---
 
@@ -306,5 +309,5 @@ pytest dijkstra_c_vs_python/tests/test_dijkstra.py -v
 
 ## 10. License & Acknowledgements
 - **License**: MIT Open Source License.
-- **Map Data**: © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, OSRM Project.
+- **Map Data**: (c) [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, OSRM Project.
 - **Developed for**: UPES B.Tech Computer Science & Engineering (Semester 7).
