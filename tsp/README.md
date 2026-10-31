@@ -170,19 +170,5 @@ python -c "import tsp_fast_solver; print('Success!')"
 
 ---
 
-## 🌐 Version Control (Git)
-
-Initialize and push to your GitHub repository:
-```bash
-git init
-git add .
-git commit -m "Initial commit of TSP solvers"
-git branch -M main
-git remote add origin https://github.com/yourusername/tsp-solver.git
-git push -u origin main
-```
-
----
-
 ## 📄 License
 This project is licensed under the MIT License.
